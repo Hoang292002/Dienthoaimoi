@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<body onload="myF()">
+  <script type="text/javascript">
+    function hide_float_right() {
+        var content = document.getElementById('float_content_right');
+        var hide = document.getElementById('hide_float_right');
+        if (content.style.display == "none")
+        {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_right()"> X </a>'; }
+            else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_right()">Sản Phẩm Khuyến Mại 95%</a>';
+        }
+        }
+      function myF(){
+          onl.style.display = "block";
+          
+        }
+        function un(){
+            onl.style.display = "none";
+        }
+    </script>
+      
+    <style>
+    .float-ck { position: fixed; bottom: 50px; z-index: 9000}
+   /*  * html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) ;*/
+    #float_content_right {border: 2px solid #b74eaa;} 
+    #hide_float_right {text-align:right; font-size: 15px; bottom: 100px;}
+    #hide_float_right a {background: #c93ea1; /* padding: 2px 4px; */ color: rgb(19, 18, 18); bottom: 100px;}
+    </style>
+    
+        <div class="float-ck" style="right: 0px">
+    <div id="hide_float_right">
+    <a href="javascript:hide_float_right()">X</a></div>
+    <div id="float_content_right">
+    <!-- Start quang cao-->
+    <img src="Image/flash_sale.gif" style="width:100px;height:100px;">
+    <!-- End quang cao -->
+    </div>
+    </div>
+    <!-- QUẢNG CÁO GIỮA -->
+        <div id="onl" style="position: fixed; bottom: 120px; top: 80px; left: 350px; z-index: 100; display: block;">
+            <div style=" width:1000px; height:200px;">
+                <a href="javascript:un()" style="color:rgb(18, 16, 16); background-color: #c93ea1;" > X</a>
+                <img src="Image/poster_ads.jpg" width="600px" height="395px">
+            </div>
+        </div>
+    <!-- KẾT THÚC QUẢNG CÁO GIỮA -->
+
+    <div id="header">
+    <nav>
+        <div id="logo">
+            <img src="image/Logo2.png" alt="OnePiece.vn" 
+            width="70" height="60" />
+         </div>
+         
+          <ul id="menu">
+              <li><a href="#trangchu">Trang chủ</a></li>
+              <li><a href="#iphone">Iphone</a>
+                <ul class="menu_con">
+                <li><a href="">Iphone7/7Plus</a></li>
+                <li><a href="">Iphone8/8Plus</a></li>
+                <li><a href="">IphoneX</a>
+                  <ul class="menu_con">
+                    <li><a href="">IphoneXs</a></li>
+                    <li><a href="">IphoneXs Max</a></li>
+                    <li><a href="">IphoneXr</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Iphone11</a>
+                  <ul class="menu_con">
+                    <li><a href="">Iphone11 Pro</a></li>
+                    <li><a href="">Iphone11 Pro Max</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Iphone12</a>
+                  <ul class="menu_con">
+                    <li><a href="">Iphone12 mini</a></li>
+                    <li><a href="">Iphone12 Pro Max</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Iphone13</a></li>
+                </ul>
+            </li>
+              <li><a href="#samsung">SamSung</a>
+                <ul class="menu_con">
+                    <li><a href="">Galaxy Z series</a></li>
+                    <li><a href="">Galaxy S series</a></li>
+                    <li><a href="">Galaxy M33</a></li>
+                    <li><a href="">Galaxy A53</a></li>
+                    </ul>
+            </li>
+              <li><a href="#oppo">OPPO</a>
+                <ul class="menu_con">
+                    <li><a href="">Reno 5</a></li>
+                    <li><a href="">Reno 6</a></li>
+                    <li><a href="">Reno 7</a></li>
+                    <li><a href="">Reno 8</a></li>
+                    <li><a href="">Find X2</a></li>
+                    </ul>
+            </li>
+              <li><a href="#vinsmart">VinSmart</a>
+                <ul class="menu_con">
+                  <li><a href="">VSmart Joy</a></li>
+                  <li><a href="">VSmart Star</a>
+                    <ul class="menu_con">
+                      <li><a href="">VS Star 4</a></li>
+                      <li><a href="">VS Star 5</a></li>
+                      <li><a href="">VSmart</a></li>
+                      <li><a href="">menu1.2.4</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="">VSmart Active</a></li>
+                  <li><a href="">VSmart Live</a></li>
+                  <li><a href="">VSmart Aris</a></li>
+                  </ul>
+            </li>
+              <li><a href="#trogiup">Trợ giúp</a></li>
+              <li><a href="#giohang"><i class="fas fa-shopping-cart"></i></a></li>
+              <li><button style="padding:20px 20px ; border:none; background-color:rgb(18, 204, 237); color:aliceblue; text-decoration-line: underline; border: none; "
+                onclick="document.getElementById('id01').style.display='block'"><b>Đăng Nhập</b></button></li>
+              <li><button style="padding:20px 20px ; border:none; background-color:rgb(18, 204, 237); color:aliceblue; text-decoration-line: underline; border: none; "><b>Đăng Ký</b></button></li>
+              <!-- <li style="text-decoration-line: underline ;"><a href="http://127.0.0.1:5500/FormDangNhap.html">Đăng nhập</a></li> -->
+              <!-- <li style="text-decoration-line: underline ;"><a href="#dangky">Đăng ký</a></li> -->
+          </ul>
+         <!-- <ul class="menu_DK">
+           <li><a href="#trogiup">Đăng nhập</a></li>
+           <li><a href="#trogiup">Đăng ký</a></li>
+         </ul> -->
+         <form style="text-align:center ; ">
+          <input type="text" placeholder="Bạn muốn tìm gì?" style="padding: 5px 30px;" />
+          <!-- <button style="height:23px; width: 57px; border-radius: 10px; border: 1px solid;">Search</i></button>  -->
+        </form>
+    </nav>
+    </div>
+    <div class="main">
+      
+       <div class="modal" id="id01">
+          <form class="modal_content" action="" method="post">
+             <div class="imgContainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                <img src="image/meocon.jpg" class="avatar" style="width:150px; height:150px">
+             </div>
+             <div class="container">
+                <label for="yourname"><b>Tên Đăng Nhập</b></label>
+                <input type="text" placeholder="Nhập tài khoản" name="yourname" required>
+                <label for="yourPasw"><b>Mật Khẩu</b></label>
+                <input type="password" name="yourPasw" required>
+                <button type="submit">Đăng Nhập</button>
+                <label>
+                  <input type="checkbox" checked="check" name="Remember">Nhớ Mật Khẩu
+                  
+                </label>
+             </div>
+             <div class="container">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                 <span class="yourPasw">Quên <a href="">Mật Khẩu</a></span>
+              </div>
+          </form>
+       </div>
+       <script>
+        var modal=document.getElementById('id01');
+        /* ấn ra ngoài thoát luôn*/
+        window.onclick= function(event){
+          if(event.target==modal){
+            modal.style.display="none";
+          }
+        }
+       </script>
+
+      <button class="open_button" onclick="OpenForm()">Chat</button> <!-- button chat -->
+      <div class="chat_popup" id="myForm">
+        <form class="form_container">
+           <h1>Chat</h1>
+           <label for="msg"><b>message</b></label>
+           <textarea placeholder="chat gi do di :((" name="msg" required></textarea>
+           <button type="submit" class="btn_send">Send</button>
+           <button type="button" class="btn_cancel" onclick="CloseForm()">Close</button>
+        </form>
+      </div>
+
+      <script>
+        function OpenForm(){
+          document.getElementById("myForm").style.display="block";
+        }
+
+        function CloseForm(){
+          document.getElementById("myForm").style.display="none";
+        }
+      </script>
+      <!-- <form style="text-align:center ; ">
+        <input type="text" placeholder="Bạn muốn tìm gì?" style="padding: 3px 60px;" />
+        <button style="height:23px; width: 57px; border-radius: 10px; border: 1px solid;">Search</i></button> 
+      </form> -->
+      <div id="mySideNav" class="sideNav">
+       <a href="https://www.facebook.com/vanhoang.truong.318" id="facebook">Facebook</a>
+       <a href="https://www.tiktok.com/@hoangden318" id="tiktok">TikTok</a>
+       <a href="" id="twitter">Twitter</a>
+       <a href="https://www.youtube.com/channel/UC3BQuAyI1t3a0l3POG2LoDA" id="youtube">Youtube</a>
+      </div>
+      <div class="banner">
+        <img src="image/anh_banner.jpg" style="z-index:-1;">
+      </div>
+
+    <div class="slide_show">
+      
+      <div class="mySlide CD">
+        <div class="number_text">1/4</div>
+        <img src="Image/anh_main.png" style="width:100% ;height: 300px;">
+      </div>
+      <div class="mySlide CD">
+        <div class="number_text">2/4</div>
+        <img src="Image/anh_main2.png" style="width:100% ;height: 300px;">
+      </div>
+      <div class="mySlide CD">
+        <div class="number_text">3/4</div>
+        <img src="Image/anh_main3.png" style="width:100% ;height: 300px;">
+      </div>
+      <div class="mySlide CD">
+        <div class="number_text">4/4</div>
+        <img src="Image/anh_main4.png" style="width:100% ;height: 300px;">
+      </div>
+      <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlide(1)">&#10095;</a>
+    </div>
+    
+    <!-- <div style="text-align: center;">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div> -->
+    <div class="sub_main">
+       <div id="content">
+          <h2>
+            DẪN ĐẦU <br>
+            XU HƯỚNG THIẾT KẾ
+          </h2>
+          <br>
+          <p style="font-size: large ;">
+            Galaxy Z Fold 4 là một sản phẩm vô cùng mới mẻ,<br>
+            cùng với sự đột phá trong quá trình thiết kế. Màn hình 120Hz<br>
+            ấn tượng cùng với tính năng gập có một không hai, mang đến<br>
+            một trải nghiệm vô cùng mãn nhãn với những người khó tính nhất.
+          </p>
+       </div>
+       <div id="anh_gioi_thieu">
+          <img src="image/SS_zfold4.png" style="height: 400px; width: 500px;">
+       </div>
+    </div>
+    <div class="sub_main1">
+      <div id="anh_gioi_thieu">
+        <img src="image/ip-14.jpg" style="height: 400px; width: 500px;">
+     </div>
+     <div id="content1">
+      <h2>
+       SẢN PHẨM MỚI RA MẮT
+      </h2>
+      <br>
+      <p style="font-size: large ;">Iphone 14 hỗ trợ chế độ quay phim chống rung tốt. Tính năng quay video hỗ trợ 
+        <br>quay 4K ở 30fps hay 24fps, cùng với các tính năng như nhận diện khuôn mặt,
+        <br> tự động lấy nét. Giao diện được thay đổi với sự xuất hiện của lỗ khuyết</p>
+     </div>
+    </div>
+    <br>
+    <div class="phanLoai">
+      <p style="font-size:18px ;">Chọn điện thoại theo nhu cầu:</p>
+      <br>
+      <div class="luaChon">
+         <a href="" class="hopLuaChon">Chơi game /cấu hình cao</a>
+         <a href="" class="hopLuaChon">Chụp ảnh, quay phim</a>
+         <a href="" class="hopLuaChon">Mỏng nhẹ</a>
+         <a href="" class="hopLuaChon">Nhỏ gọn dễ cầm</a>
+      </div>
+      <form style="margin: 20px;">
+        <input type="checkbox"> <label style="margin-right:15px ;">Giao nhanh</label>
+        <input type="checkbox"> <label style="margin-right:15px ;">Giảm giá</label>
+        <input type="checkbox"> <label style="margin-right:15px ;">Góp 0%</label>
+        <input type="checkbox"> <label style="margin-right:15px ;">Mới</label>
+      </form>
+    </div>
+    <div class="table">
+      <table>
+        <tr class="anh_DT">
+          <td><a href="ChiTietSPIP13.html" ><img src="image/image-iphone13_promax.png" alt="iphone-13-pro-max"></a></td>
+          <td><img src="image/galaxy_Z_fold3.webp" alt="galaxy_Z_fold3"></td>
+          <td><img src="image/reno8.png" alt="Oppo Reno 8"></td>
+          <td><img src="image/oppo-find-x2-cam.png" alt="Oppo FindX2 Pro"></td>
+          <td><img src="image/vsmart-joy-4-green.png" alt="VSmart Joy 4"></td>
+        </tr>
+        <tr class="anh_tenDT">
+          <td><b>Iphone13 Pro Max</b></td>
+          <td><b>Galaxy Z Fold3 5G</b></td>
+          <td><b>OPPO Reno 8</b></td>
+          <td><b>OPPO FindX2 Pro</b></td>
+          <td><b>VsMart Joy 4</b></td>
+        </tr>
+        <tr class="anh_giatien">
+          <td><p>26.590.000đ</p></td>
+          <td><p>32.991.543đ</p></td>
+          <td><p>8.990.000đ</p></td>
+          <td><p>21.990.000đ</p></td>
+          <td><p>3.500.000đ</p></td>
+        </tr>
+        <tr class="nut_bam">
+          <td><a href="ChiTietSPIP13.html"><button>Mua ngay</button></a></td>
+          <td><button>Mua ngay</button></td>
+          <td><button>Mua ngay</button></td>
+          <td><button>Mua ngay</button></td>
+          <td><button>Mua ngay</button></td>
+        </tr>
+      </table>
+       <br>
+      <table>
+        <tr class="anh_DT">
+          <td><img src="image/iphone_12.png" alt="iphone-12"></td>
+          <td><img src="image/galaxy-m33.png" alt="galaxy_M33"></td>
+          <td><img src="image/galaxy-s22-ultra.webp" alt="galaxy-s22-ultra"></td>
+          <td><img src="image/reno6-z.png" alt="reno6-z"></td>
+          <td><img src="image/iphone-x.png" alt="iphone-x"></td>
+        </tr>
+        <tr class="anh_tenDT">
+          <td><b>Iphone 12</b></td>
+          <td><b>Galaxy M33</b></td>
+          <td><b>Galaxy S22 Ultra</b></td>
+          <td><b>OPPO Reno6 Z</b></td>
+          <td><b>Iphone X</b></td>
+        </tr>
+        <tr class="anh_giatien">
+          <td><p>16.499.000đ</p></td>
+          <td><p>7.690.000đ</p></td>
+          <td><p>25.991.564đ</p></td>
+          <td><p>6.090.000đ</p></td>
+          <td><p>7.400.000đ</p></td>
+        </tr>
+        <tr class="nut_bam">
+          <td><button>Mua ngay</button></td>
+          <td><button>Mua ngay</button></td>
+          <td><button>Mua ngay</button></td>
+          <td><button>Mua ngay</button></td>
+          <td><button>Mua ngay</button></td>
+        </tr>
+      </table>
+    </div>
+    
+    </div>
+   
+
+    <div class="footer">
+      <p style="margin-left:10px ;">© copyright 2022. Công ty TNHH một mình tôi.GPDKKD:01348372837 do sở KH & DT TPHN cấp ngày 1/9/2020.GPMXH: 111/GB-BTTTT do bộ Thông Tin và Truyền Thông cấp ngày 1/10/2020.</p>
+      <ul class="ThongTin">
+        <li>Địa chỉ: Đại Áng-Thanh Trì-Hà Nội</li>
+        <li>Điện Thoại: 0386904912</li>
+        <li>Email: truonghoang31082002@gmail.com</li>
+        <li>Người thực hiện: Trương Văn Hoàng_29_TH25.01</li>
+      </ul>
+    </div>
+   <script>
+    let slideIndex=0;//1
+    showSlide(slideIndex);
+    //prev, next
+    function plusSlide(n){
+      showSlide(slideIndex+=n);
+    }
+    //image current
+    function currentSlide(n){
+      showSlide(slideIndex=n);
+    }
+    //show slide
+    function showSlide(n){
+      let i;
+      let slide= document.getElementsByClassName("mySlide");
+      /* let dot= document.getElementsByClassName("dot"); */
+      /* if(n>slide.length){slideIndex=1} */
+      if(n<1){slideIndex=slide.length}
+      for(i=0;i<slide.length;i++){
+        slide[i].style.display="none";
+      }
+      slideIndex++;
+      /* for(i=0;i<dot.length;i++){
+        dot[i].className=dot[i].className.replace("active","");
+      } */
+      if(slideIndex>slide.length){slideIndex=1}
+      slide[slideIndex-1].style.display="block";
+      /* dot[slideIndex-1].className+="active"; */
+      setTimeout(showSlide, 3000);
+    }
+   </script>  
+    
+</body>
+</html>

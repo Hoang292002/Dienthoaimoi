@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iphone-13-pro-max</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+<style>
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  #header{
+    background-color: rgb(18, 204, 237);
+    
+}
+nav{
+    display: flex;
+    justify-content: left;
+    justify-items: center;
+    align-items: center;
+    margin-left: 60px;
+}
+#menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#menu li a{
+    position: relative;
+}
+#menu li:hover {
+    background: rgba(67, 106, 165, 0.53);
+}
+#menu li a {
+    color: aliceblue;
+    display: block;
+    padding: 20px 22px;
+    text-decoration: none;
+
+}
+
+#menu ul.menu_con{ /*menu cap2*/
+    position: absolute;
+    background-color: rgb(18, 204, 237);
+    list-style: none;
+    width: 190px;
+    padding: 10px 0;
+    border: 1px solid rgb(57 92 173 / 31%);
+    display: none;
+}
+#menu li:hover>ul.menu_con{
+    display: block;
+}
+
+#menu ul.menu_con a{
+    padding: 10px 40px;
+    border-bottom: 1px solid rgb(57 92 173 / 31%);
+    left: 0;
+}
+#menu ul.menu_con li:hover> a{
+    border-bottom: 1px solid rgba(128, 163, 244, 0.31);
+}
+#menu ul.menu_con li:last-child a{/*bỏ vien trong the li cuoi*/
+    border: none;
+}
+
+#menu ul.menu_con ul.menu_con{ /*menu cap 3*/
+    left: 190px;
+    top: 76.5px;
+}
+
+#menu ul li button:hover{
+    background: rgba(18, 67, 140, 0.53);
+}
+
+.mySlide img{
+    vertical-align: middle;
+    width: 240px;
+    height: 240px;
+    border: 1px solid rgb(92, 90, 90);
+    position: relative;
+    margin-left: 10px;
+  }
+.column img{
+  border: 1px solid rgba(92, 90, 90, 0.532);
+  position: relative;
+    margin-left: 10px;
+}
+  .slide_show{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    /* z-index: -1; */
+}
+/*prev and next*/
+/* .prev, .next{
+    border-radius: 0 5px 5px 0;
+    margin-top: -22px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 17px;
+    font-weight: bold;
+    font-size: 20px;
+    color: aliceblue;
+    transition: 0.6s ease-out;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+.prev:hover, .next:hover {
+background-color: rgb(44, 43, 43);
+} */
+/*number text*/
+/* .number_text{
+    position: absolute;
+    font-size: 10px;
+    padding: 8px 12px;
+    top: 0;
+} */
+.row{
+  position: relative;
+  margin-top: 20px;
+}
+.row:after{
+content: "";
+display: table;
+clear: both;
+}
+.column{
+  float: left;
+  
+}
+.MuaSP{
+  display: flex;
+  width: 100%;
+}
+/* dung luong*/
+.DungLuong span:hover{
+ background-color: aqua;
+}
+.button:hover{
+  opacity: 1;
+}
+</style>
+<body>
+  <div id="header">
+    <nav>
+        <div id="logo">
+            <img src="image/Logo2.png" alt="OnePiece.vn" 
+            style="width: 70px; height:60px" />
+         </div>
+         
+          <ul id="menu">
+              <li><a href="#trangchu">Trang chủ</a></li>
+              <li><a href="#iphone">Iphone</a>
+                <ul class="menu_con">
+                <li><a href="">Iphone7/7Plus</a></li>
+                <li><a href="">Iphone8/8Plus</a></li>
+                <li><a href="">IphoneX</a>
+                  <ul class="menu_con">
+                    <li><a href="">IphoneXs</a></li>
+                    <li><a href="">IphoneXs Max</a></li>
+                    <li><a href="">IphoneXr</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Iphone11</a>
+                  <ul class="menu_con">
+                    <li><a href="">Iphone11 Pro</a></li>
+                    <li><a href="">Iphone11 Pro Max</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Iphone12</a>
+                  <ul class="menu_con">
+                    <li><a href="">Iphone12 mini</a></li>
+                    <li><a href="">Iphone12 Pro Max</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Iphone13</a></li>
+                </ul>
+            </li>
+              <li><a href="#samsung">SamSung</a>
+                <ul class="menu_con">
+                    <li><a href="">Galaxy Z series</a></li>
+                    <li><a href="">Galaxy S series</a></li>
+                    <li><a href="">Galaxy M33</a></li>
+                    <li><a href="">Galaxy A53</a></li>
+                    </ul>
+            </li>
+              <li><a href="#oppo">OPPO</a>
+                <ul class="menu_con">
+                    <li><a href="">Reno 5</a></li>
+                    <li><a href="">Reno 6</a></li>
+                    <li><a href="">Reno 7</a></li>
+                    <li><a href="">Reno 8</a></li>
+                    <li><a href="">Find X2</a></li>
+                    </ul>
+            </li>
+              <li><a href="#vinsmart">VinSmart</a>
+                <ul class="menu_con">
+                  <li><a href="">VSmart Joy</a></li>
+                  <li><a href="">VSmart Star</a>
+                    <ul class="menu_con">
+                      <li><a href="">VS Star 4</a></li>
+                      <li><a href="">VS Star 5</a></li>
+                      <li><a href="">VSmart</a></li>
+                      <li><a href="">menu1.2.4</a></li>
+                      </ul>
+                  </li>
+                  <li><a href="">VSmart Active</a></li>
+                  <li><a href="">VSmart Live</a></li>
+                  <li><a href="">VSmart Aris</a></li>
+                  </ul>
+            </li>
+              <li><a href="#trogiup">Trợ giúp</a></li>
+              <li><a href="#giohang"><i class="fas fa-shopping-cart"></i></a></li>
+              <li><button style="padding:20px 20px ; border:none; background-color:rgb(18, 204, 237); color:aliceblue; text-decoration-line: underline; border: none; "
+                onclick="document.getElementById('id01').style.display='block'"><b>Đăng Nhập</b></button></li>
+              <li><button style="padding:20px 20px ; border:none; background-color:rgb(18, 204, 237); color:aliceblue; text-decoration-line: underline; border: none; "><b>Đăng Ký</b></button></li>
+              <!-- <li style="text-decoration-line: underline ;"><a href="http://127.0.0.1:5500/FormDangNhap.html">Đăng nhập</a></li> -->
+              <!-- <li style="text-decoration-line: underline ;"><a href="#dangky">Đăng ký</a></li> -->
+          </ul>
+         <!-- <ul class="menu_DK">
+           <li><a href="#trogiup">Đăng nhập</a></li>
+           <li><a href="#trogiup">Đăng ký</a></li>
+         </ul> -->
+         <form style="text-align:center ; ">
+          <input type="text" placeholder="Bạn muốn tìm gì?" style="padding: 5px 30px;" />
+          <!-- <button style="height:23px; width: 57px; border-radius: 10px; border: 1px solid;">Search</i></button>  -->
+        </form>
+    </nav>
+    </div>
+
+  <div class="MuaSP">
+    <div class="slide_show" style="position: relative; margin-top:20px ; margin: 10px 0px 9px;">
+      
+        <div class="mySlide CD">
+          <img src="Image/iphone-13-pro-max.jpg" >
+        </div>
+        <div class="mySlide CD">
+          <img src="Image/iphone-13-pro-max.jpg" >
+        </div>
+        <div class="mySlide CD">
+          <img src="Image/iphone-13-pro-max.jpg" >
+        </div>
+        <div class="mySlide CD">
+          <img src="Image/iphone-13-pro-max.jpg" >
+        </div>
+       <!--  <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlide(1)">&#10095;</a> -->
+
+        <div class="row">
+           <div class="column">
+                <img class="demo cursor" src="Image/iphone-13-pro-max.jpg" style="width:60px ; height:60px"  onclick="currentSlide(1)" alt="">
+           </div>
+           <div class="column">
+                <img class="demo cursor" src="Image/iphone-13-pro-max.jpg" style="width:60px ; height:60px" onclick="currentSlide(2)" alt="">
+           </div>
+           <div class="column">
+                <img class="demo cursor" src="Image/iphone-13-pro-max.jpg" style="width:60px ; height:60px" onclick="currentSlide(3)" alt="">
+           </div>
+           <div class="column">
+            <img class="demo cursor" src="Image/iphone-13-pro-max.jpg" style="width:60px ; height:60px" onclick="currentSlide(4)" alt="">
+           </div>
+        </div>
+      </div>
+
+      <div class="chiTietSP" style="width:700px; padding:0 20px;">
+         <p style=" text-align: left; margin-top: 20px; font-size: x-large;">IPHONE 13 PRO MAX- HÀNG CHÍNH HÃNG VN/A</p> <br>
+         <i class="fas fa-star"></i> 
+         <span><i class="fas fa-star"></i></span>
+         <span><i class="fas fa-star"></i></span>
+         <span><i class="fas fa-star"></i></span>
+         <span><i class="fas fa-star-half-alt"></i></span>
+         <span><a href="" style="text-decoration: none; color:rgb(127, 236, 255)">đánh giá</a></span>
+         <span style="float: right;"><i class="fas fa-heart"></i></span>
+         <span style="float: right; padding: 0 3px 0 0;"><i class="fas fa-share-alt"></i></span> 
+         
+         <div class="ThuongHieu" style="margin-top: 30px; border-bottom: 1px solid rgb(163, 157, 157);">
+          <p style="color: rgb(135, 130, 130);">Thương hiệu: <span><a href="" style="text-decoration: none; color:rgb(127, 236, 255)">Apple</a></span>
+            <span>|</span> <span><a href="" style="text-decoration: none; color:rgb(127, 236, 255)">Xem thêm Smartphones của Apple</a></span>
+          </p>
+           
+        </div> <br>
+         <b style="font-size:  x-large; color: orangered;">26.990.000 <span><sup>đ</sup></span></b>
+         <p style="color: rgb(135, 130, 130); ">33.990.000 <span>Giá gốc giảm:</span><span><b>-21%</b></span></p>
+          <br>
+         <div class="UuDai">
+          <p style="color: rgb(114, 109, 109);">Ưu đãi:
+          <span style="font-weight:bold; background-color:orangered; color: aliceblue; margin-left: 26px;">MỞ THẺ LAZADA CITY PLATINUM NHẬN COMBO QUÀ 3,6TR</span>
+          </p><br>
+          <span style="background-color:orangered; color: aliceblue; margin-left: 79.5px;">Chi tiêu tối thiểu 2.000.000 đ</span>
+         </div> <br>
+         <div class="TraGop" style="border-bottom: 1px solid rgb(163, 157, 157);">
+          <p style="color: rgb(114, 109, 109);">Trả góp 0%
+          <span><i class="far fa-calendar"></i></span>
+          <span>Trả góp trong 12 tháng, chỉ với 2.249.167 ₫ mỗi tháng</span>
+          </p>
+         </div> <br>
+         <div class="NhomMau">
+          <p style="color: rgb(114, 109, 109);">Nhóm màu:</p>
+          <div class="row" style="margin-left: 120px;">
+            <div class="column">
+                 <img class="demo cursor" src="Image/iphone-13-pro-max.jpg" style="width:40px ; height:40px"  onclick="currentSlide(1)" alt="">
+            </div>
+            <div class="column">
+                 <img class="demo cursor" src="Image/iphone-13-pro-max.jpg" style="width:40px ; height:40px" onclick="currentSlide(2)" alt="">
+            </div>
+            <div class="column">
+                 <img class="demo cursor" src="Image/iphone-13-pro-max.jpg" style="width:40px ; height:40px" onclick="currentSlide(3)" alt="">
+            </div>
+            <div class="column">
+             <img class="demo cursor" src="Image/iphone-13-pro-max.jpg" style="width:40px ; height:40px" onclick="currentSlide(4)" alt="">
+            </div>
+         </div>
+         </div> <br>
+         <div class="LuuTru">
+          <p style="color: rgb(114, 109, 109);">Dung lượng lưu trữ</p><br>
+          <div class="DungLuong" style="margin-left: 120px; border-radius: 3px; cursor: pointer;">
+            <span style="border:1px solid rgb(135, 130, 130); border-radius: 3px; padding: 5px;">128GB</span>
+            <span  style="border:1px solid rgb(135, 130, 130);border-radius: 3px; padding: 5px;">256GB</span>
+            <span  style="border:1px solid rgb(135, 130, 130);border-radius: 3px; padding: 5px;">512GB</span>
+            <span  style="border:1px solid rgb(135, 130, 130);border-radius: 3px; padding: 5px;">1TB</span>
+          </div>
+         </div><br>
+           <div class="SoLuong" style="display:flex;">
+            
+              <p style="color: rgb(114, 109, 109);">Số lượng</p>
+              <div class="SL" style="margin-left: 50px; ">
+                <a href="" style="text-decoration: none;"><span style="font-size: xx-large;position: relative;
+                  bottom: 5.8px;
+                  margin: 3px;">-</span></a><input type="text" name="" id="" style="width: 30px;top: -10px;
+                position: relative;">
+                <a href="" style="text-decoration: none;"><span style="font-size: x-large;position: relative;
+                  bottom: 5.8px;
+                  margin: 3px;">+</span></a>
+                  <span style="position: relative;
+                  bottom: 10px;
+                  background-color: darkgray;">Chỉ còn 5 sản phẩm</span>
+              </div>
+              
+           </div>
+           <div class="button" style="display: flex;  padding: 15px 20px; ">
+              <button style="max-width: 100%; width: 100%;padding: 15px 20px;color: white; background-color: orange; border: none">Mua Ngay</button>
+              <button style="max-width: 100%; width: 100%;padding: 15px 20px;color: white; background-color: orangered; border: none">Thêm vào giỏ hàng</button>
+           </div>
+      </div>
+
+      <div class="giaoHang">
+        <p> Tùy chọn giao hàng</p><br>
+        <div class="" style="border-bottom: 1px solid rgb(163, 157, 157);"><p><i class="fas fa-map-signs"></i> Hà Nội,Huyện Thanh Trì,<br>Đại Áng</p><br>
+        <p ><i class="fab fa-fly"></i> Xử lí đơn hàng bởi Lazada</p>
+      </div><br>
+        <div class="" style="border-bottom: 1px solid rgb(163, 157, 157);">
+          <p><i class="fas fa-shipping-fast"></i><span>GH tiêu chuẩn</span> <span style="float: right;">22.800 ₫</span></p><br>
+          <p><i class="fas fa-wallet"></i><span>Thanh toán khi nhận hàng(không được đồng kiểm)</span></p>
+        </div><br>
+        <div class="DoiTra" style="border-bottom: 1px solid rgb(163, 157, 157);">
+          <p>Đổi trả và bảo hành</p><br>
+          <p><i class="fas fa-check"></i> <span>100% chính hãng</span></p><br>
+          <p><i class="fas fa-check"></i> <span>15 ngày trả hàng</span></p>
+          <p><span style="font-size: small;">Được trả hàng với lý do "Không vừa ý" <br>
+             (Sản phẩm chưa qua sử dụng 
+             và còn nguyên tem mạc)</span></p><br>
+          <p><i class="fas fa-shield-alt"></i><span>Bảo hành 12 tháng</span></p>   
+        </div><br>
+        <div class="DanhGia">
+           <tr>
+            <td>Đánh giá tích cực</td>
+            <td>Giao đúng hạn </td>
+            <td> Phản hồi</td>
+           </tr>
+        </div>
+      </div>
+     
+    </div>
+      
+    <script>
+ let slideIndex=1;//1
+    showSlide(slideIndex);
+    //prev, next
+    function plusSlide(n){
+      showSlide(slideIndex+=n);
+    }
+    //image current
+    function currentSlide(n){
+      showSlide(slideIndex=n);
+    }
+    //show slide
+    function showSlide(n){
+      let i;
+      let slide= document.getElementsByClassName("mySlide");
+      /* let dot= document.getElementsByClassName("dot"); */
+      if(n>slide.length){slideIndex=1}
+      if(n<1){slideIndex=slide.length}
+      for(i=0;i<slide.length;i++){
+        slide[i].style.display="none";
+      }
+      /* slideIndex++; */
+      /* for(i=0;i<dot.length;i++){
+        dot[i].className=dot[i].className.replace("active","");
+      } */
+      if(slideIndex>slide.length){slideIndex=1}
+      slide[slideIndex-1].style.display="block";
+      /* dot[slideIndex-1].className+="active"; */
+      /* setTimeout(showSlide, 3000); */
+    }
+</script>  
+</body>
+</html>
